@@ -52,11 +52,11 @@
 <div>
     <form class="w-50 p-5 shadow rounded text-center position-absolute top-50 start-50 translate-middle row">
         <p class="font-weight-bold">Редактировать запись</p>
-        <input class="mt-2 rounded" id="name" type="text" placeholder="Сорт" value="<%=((Games) request.getAttribute("games")).getGame()%>">
-        <input class="mt-2 rounded" id="main_color" type="text" placeholder="Цвет" value="<%=((Games) request.getAttribute("games")).getDevelopers()%>">
-        <input class="mt-2 rounded" id="family" type="text" placeholder="Род" value="<%=((Games) request.getAttribute("games")).getGenre()%>">
-        <input class="mt-2 rounded" id="height" type="number" placeholder="Высота" value="<%=((Games) request.getAttribute("games")).getYear()%>">
-        <input class="mt-2 rounded" id="price" type="number" placeholder="Цена" value="<%=((Games) request.getAttribute("games")).getMetacritic()%>">
+        <input class="mt-2 rounded" id="game" type="text" placeholder="Название игры" value="<%=((Games) request.getAttribute("games")).getGame()%>">
+        <input class="mt-2 rounded" id="developers" type="text" placeholder="Разработчик" value="<%=((Games) request.getAttribute("games")).getDevelopers()%>">
+        <input class="mt-2 rounded" id="genre" type="text" placeholder="Жанр" value="<%=((Games) request.getAttribute("games")).getGenre()%>">
+        <input class="mt-2 rounded" id="year" type="number" placeholder="Год выпуска" value="<%=((Games) request.getAttribute("games")).getYear()%>">
+        <input class="mt-2 rounded" id="metacritic" type="number" placeholder="Метакритика" value="<%=((Games) request.getAttribute("games")).getMetacritic()%>">
         <button type="button" class="btn btn-success mt-2 rounded" onclick="sendEditedFlower()">Сохранить</button>
     </form>
 </div>
